@@ -72,10 +72,10 @@ for imag in images:
     masked[:,:,1] = cv2.bitwise_and(threshNeweroDila,clhrgb[:,:,1])
     masked[:,:,2] = cv2.bitwise_and(threshNeweroDila,clhrgb[:,:,2 ])
     cv2.imshow("werid",clhrgb)
-    cv2.imshow("werid lab thresh",threshNewCl)
-    cv2.imshow("werid lab thresh eroded",threshNewClero)
-    cv2.imshow("werid lab thresh eroded n dilated",threshNeweroDila)
-    cv2.imshow("werid lab thresh eroded n dilated and segmented",masked)
+    cv2.imshow("werid hsv thresh",threshNewCl)
+    cv2.imshow("werid hsv thresh eroded",threshNewClero)
+    cv2.imshow("werid hsv thresh eroded n dilated",threshNeweroDila)
+    cv2.imshow("werid hsv thresh eroded n dilated and segmented",masked)
 
 
     # cv2.imshow("RoshGrad",roshGrad)
